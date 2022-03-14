@@ -3,23 +3,23 @@ Un hola mundo para embebidos utilizando una nucleof303re en Linux con la librer�
 
 ## Clonar y compilar openlibcm3
 No olvides clonar la librería openlibcm3 una vez que clones este repositorio:
-```bash
+``` bash
 git submodule update --init
 ```
 Una vez clonada la librería, no olvides compilarla:
-```bash
+``` bash
 cd libopencm3 && make
 ```
 
 ## Compilar appl
 Para compilar el proyecto, entra a a la carpeta `appl` ejecuta `make`
-```bash
+``` bash
 cd appl && make
 ```
 
 ## Flashing
 Para flashear el binario `blinky.bin` en el microcontrolador:
-```bash
+``` bash
 st-flash --reset write blinky.bin 0x8000000
 ```
 

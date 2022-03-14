@@ -43,7 +43,7 @@ int main(void)
     for(volatile unsigned int tmr = 1e6; tmr > 0; tmr--);
 
     /* Enciende / apaga el LED. */
-    gpio_toggle(GPIOA, GPIO5);
+    gpio_toggle(GPIO_PORT_LED1, GPIO_PIN_LED1);
   }
   return 0;
 }
